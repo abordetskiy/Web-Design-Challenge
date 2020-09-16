@@ -6,4 +6,3 @@
 # import os
 #adds variable from environments - need to pip install python-dotenv
 # load_dotenv()
-# os.environ.get("DATABASE_URL")
