@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <title>Bootstrap Components</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="dashboard.html">WeatherPy Dashboard</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="../dashboard.html">WeatherPy Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
@@ -19,21 +18,21 @@
       <ul class="navbar-nav ml-auto">
        
         <li class="nav-item">
-          <a class="nav-link" href="assets/Data.html">Data</a>
+          <a class="nav-link" href="Data.html">Data</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="assets/Comparisons.html">Comparisons</a>
+          <a class="nav-link" href="Comparisons.html">Comparisons</a>
         </li>
 
         <li class="nav-item dropleft">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <div class="dropdown-header">Visualizations</div>
-            <a class="dropdown-item" href="assets/TemperatureChart.html">Temperature</a>
-            <a class="dropdown-item" href="assets/HumidtyChart">Humidy</a>
-            <a class="dropdown-item" href="assets/CloudinessChart">Cloudiness</a>
-            <a class="dropdown-item" href="assets/WindSpeedTemperatureChart">Wind Speed</a>
+            <a class="dropdown-item" href="TemperatureChart.html">Temperature</a>
+            <a class="dropdown-item" href="HumidityChart.html">Humidy</a>
+            <a class="dropdown-item" href="CloudinessChart.html">Cloudiness</a>
+            <a class="dropdown-item" href="WindSpeedChart.html">Wind Speed</a>
           </div>
         </li>
       </ul>
@@ -49,15 +48,12 @@
   <div class="row">
     <div class="col-md-8 blog-main">
       <h2 class="pb-3 mb-4 font-italic border-bottom">
-        <br>Welcome to the WeatherPy Dashboard!
+        <br>Global Humidity Chart
       </h2>
       <div class="blog-post">
 
-        <p style ="text-indent:45px">Here you can find an analysis of weather data pulled in from OpenWeatherMap API using the Python CitiPy for geolocation information.<br></p>
-        <p style ="text-indent:45px">The WeatherPy script returns the latitude and subsequent weather data on over 500 locations in the world. These data points are then charted in a scatter plot to show a visual representation of the relationships between latitude and weather patterns.</p>
-
-
-        <p style ="text-indent:45px">Explore the Navigation Bar for Data and Comparisons of all metrics. Select one of the charts from the Visualizations sidebar for more information, or select your choice from the Plots dropdown menu.</p>
+        <p style ="text-indent:45px">There seem to be slightly less concentrations of low humidities farther from the equator which makes sense as there would be less heat to evaporate water. The majority of humidities near the equator seem to be high, while in that ~20 and ~(-10) range, again, is where the data shows low humidity - which supports our findings on max temperature.</p>
+        <img src="images/General_Humidity_Chart.png" alt=" General_Temperature_Chart " class="rounded float-right" style="width:100%">
       </div>
     </div>
 
@@ -65,21 +61,22 @@
         <br>
         <h5 class="font-italic"style="text-align:center">Visualizations</h5>
 
-        <a href="assets/images/General_Temperature_Chart.png">
-          <img src=" assets/images/General_Temperature_Chart.png " alt=" General_Temperature_Chart " class="rounded float-right" style="width:100%">
+        <a href="TemperatureChart.html">
+          <img src="images/General_Temperature_Chart.png" alt=" General_Temperature_Chart " class="rounded float-right" style="width:100%">
         </a>
 
-        <a href="assets/images/General_Humidity_Chart.png">
-          <img src=" assets/images/General_Humidity_Chart.png " alt=" General_Humidity_Chart " class="rounded float-right" style="width:100%">
+        <a href="HumidityChart.html">
+          <img src="images/General_Humidity_Chart.png" alt=" General_Humidity_Chart " class="rounded float-right" style="width:100%">
         </a>
 
-        <a href=" assets/images/General_Cloudiness_Chart.png ">
-          <img src=" assets/images/General_Cloudiness_Chart.png " alt=" General_Cloudiness_Chart " class="rounded float-right"style=" width:100%">
+        <a href="CloudinessChart.html">
+          <img src="images/General_Cloudiness_Chart.png" alt=" General_Cloudiness_Chart " class="rounded float-right"style=" width:100%">
+        </a>
+  
+        <a href="WindSpeedChart.html">
+          <img src="images/General_Wind_Speed_Chart.png" alt=" General_Wind_Speed_Chart " class="rounded float-right"style="width:100%">
         </a>
 
-        <a href=" assets/images/General_Wind_Speed_Chart.png ">
-          <img src=" assets/images/General_Wind_Speed_Chart.png " alt=" General_Wind_Speed_Chart " class="rounded float-right"style="width:100%">
-        </a>
     </aside>
 
   </div>
