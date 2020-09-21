@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../index.html">WeatherPy Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+       
+        <li class="nav-item">
+          <a class="nav-link" href="Data.html">Data</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Comparisons.html">Comparisons</a>
+        </li>
+
+        <li class="nav-item dropleft">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-header">Visualizations</div>
+            <a class="dropdown-item" href="TemperatureChart.html">Temperature</a>
+            <a class="dropdown-item" href="HumidityChart.html">Humidy</a>
+            <a class="dropdown-item" href="CloudinessChart.html">Cloudiness</a>
+            <a class="dropdown-item" href="WindSpeedChart.html">Wind Speed</a>
+          </div>
+        </li>
+      </ul>
+    
+    </div>
+  </nav>
+
+
+
+
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h2 class="pb-3 mb-4 font-italic border-bottom">
+        <br>Global Temperature Chart
+      </h2>
+      <div class="blog-post">
+
+        <p style ="text-indent:45px">Based on the plot of max temperature vs city latitude we see what we know intuitively to be true, namely that temperature generally rises the closer you are to the equator (the closer that your latitude is to 0). It is interesting to point out, however, that the largest temperatures are not at 0, but at ~20 and ~(-10). This may be due to the landscape in those locations or earth's axis' natural tilt.</p>
+        <img src="images/General_Temperature_Chart.png" alt=" General_Temperature_Chart " class="rounded float-right" style="width:100%">
+      </div>
+    </div>
+
+    <aside class="col-sm-4 blog-sidebar">
+        <br>
+        <h5 class="font-italic"style="text-align:center">Visualizations</h5>
+
+        <a href="TemperatureChart.html">
+          <img src="images/General_Temperature_Chart.png" alt=" General_Temperature_Chart " class="rounded float-right" style="width:100%">
+        </a>
+
+        <a href="HumidityChart.html">
+          <img src="images/General_Humidity_Chart.png" alt=" General_Humidity_Chart " class="rounded float-right" style="width:100%">
+        </a>
+
+        <a href="CloudinessChart.html">
+          <img src="images/General_Cloudiness_Chart.png" alt=" General_Cloudiness_Chart " class="rounded float-right"style=" width:100%">
+        </a>
+  
+        <a href="WindSpeedChart.html">
+          <img src="images/General_Wind_Speed_Chart.png" alt=" General_Wind_Speed_Chart " class="rounded float-right"style="width:100%">
+        </a>
+
+    </aside>
+
+  </div>
+
+</main>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
